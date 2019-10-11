@@ -1,6 +1,4 @@
-# ToDoList
-Temporary
-
+# ToDoList (Temporary)
 
 Basis for a simple to do list:
 
