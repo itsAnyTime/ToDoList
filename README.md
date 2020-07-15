@@ -12,4 +12,4 @@ FYI:
 Take care, reload will lost all data. 
 
 
-Visit: https://itsanytime.github.io/ToDoList/todo.html
+Visit: <a href="https://itsanytime.github.io/ToDoList/todo.html">To Do List</a>
