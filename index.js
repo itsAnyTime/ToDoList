@@ -41,12 +41,11 @@ $(function() {
 		   else {
 		       alert("Nothing to do? NICE :D");
 		   }
-		   
 	});
 
 	$("input").on('keyup', function(e) {
 		if(e.key == 'Enter') {
-			$("#add").click();  // depracated, missing other solution
+			$("#add").trigger('click');  // $("#add").click(); -> .click deprecated
 		};
 	});
 	
