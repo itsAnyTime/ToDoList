@@ -35,7 +35,7 @@ $(function() {
 				return true;
 				} 
 				// otherwise cancel.
-				event.preventDefault();
+				preventDefault();
 			});
 		   }
 		   else {
@@ -44,15 +44,14 @@ $(function() {
 		   
 	});
 
-	// enter to submit, instead of pressing add
-	$("input").keyup(function(event){
-	if(event.which==13){
-		$("#add").click();
-		}  
+	$("input").on('keyup', function(e) {
+		if(e.key == 'Enter') {
+			$("#add").click();  // depracated, missing other solution
+		};
 	});
 	
 	// clear all entrys
-	$("#del").click(function() {
+	$("#del").on('click', function() {
     let listItems = $('#mylist li');
     if(listItems.length) {
         listItems.remove();
